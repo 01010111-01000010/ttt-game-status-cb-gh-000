@@ -12,7 +12,7 @@ def won?(board)
   else
     return false
   end
-    
+
 end
 
 def row_win?(board)
