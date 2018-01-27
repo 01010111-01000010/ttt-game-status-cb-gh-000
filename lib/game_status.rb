@@ -28,3 +28,14 @@ def won?(board)
   end
 
 end
+
+def full?(board)
+  iter = 0
+  while iter < 9
+    if board[iter] == nil || board[iter] == " "
+      return false
+    end
+    iter += 1
+  end
+  return true
+end
