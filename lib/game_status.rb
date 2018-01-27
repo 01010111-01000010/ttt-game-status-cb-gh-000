@@ -19,6 +19,10 @@ def won?(board)
     return [1, 4, 7]
   elsif (board[2] == "X" && board[5] == "X" && board[8] == "X") || (board[2] == "O" && board[5] == "O" && board[8] == "O")
     return [2, 5, 8]
+  elsif (board[0] == "X" && board[4] == "X" && board[8] == "X") || (board[0] == "O" && board[4] == "O" && board[8] == "O")
+    return [0, 4, 8]
+  elsif (board[2] == "X" && board[4] == "X" && board[6] == "X") || (board[2] == "O" && board[4] == "O" && board[6] == "O")
+    return [2, 4, 6]
   else
     return false
   end
