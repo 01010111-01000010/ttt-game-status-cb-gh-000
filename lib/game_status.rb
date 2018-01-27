@@ -55,3 +55,16 @@ def over?(board)
     return false
   end
 end
+
+def winner
+  if win?(board) == false
+    return nil
+  else
+    combo = win?(board)
+    if board[combo[0]] == "X"
+      return "X"
+    else
+      return "O"
+    end
+  end
+end
